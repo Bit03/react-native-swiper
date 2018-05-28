@@ -16,6 +16,7 @@ import {
   ActivityIndicator
 } from 'react-native'
 
+const screenWidth = Dimensions.get('screen').width;
 /**
  * Default styles
  * @type {StyleSheetPropType}
@@ -65,14 +66,13 @@ const styles = {
   },
 
   title: {
-    height: 30,
+    height: 56,
     justifyContent: 'center',
     position: 'absolute',
-    paddingLeft: 10,
-    bottom: -30,
-    left: 0,
+    bottom: 40,
+    left: 20,
     flexWrap: 'nowrap',
-    width: 250,
+    width: screenWidth - 40,
     backgroundColor: 'transparent'
   },
 
